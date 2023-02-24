@@ -2,7 +2,7 @@ if not game:IsLoaded() then
 	game.Loaded:wait() 
 end
 
-local library = {}
+local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/AlfredAgh/Roblox-UI-Libs/main/Vanis%20Lib/Vanis%20Lib%20Source.lua'))()
 local request = request or http_request or (identifyexecutor() == "Synapse X" and syn.request) or (http and http.request)
 loadstring(request({Url="https://raw.githubusercontent.com/cypherdh/Script-Library/main/InstanceProtect",Method="GET"}).Body)()
 local UIS = game:GetService("UserInputService")
